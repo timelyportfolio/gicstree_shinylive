@@ -27,7 +27,7 @@ query_runiverse <- function(package, rver = "4.3.0") {
   # pkg_summary <- jsonlite::fromJSON(paste0("https://r-universe.dev/stats/powersearch?limit=1&all=true&q=",package), simplifyVector = FALSE)[[1]]
   # author <- pkg_summary[[1]]$maintainer$login
   # package <- pkg_summary[[1]]$Package
-    author <- "timelyportfolio"
+    author <- "timelyportfolio" # override for the moment
 
   # get package details
   pkg_details <- jsonlite::fromJSON(
